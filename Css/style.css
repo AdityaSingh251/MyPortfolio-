@@ -1,0 +1,135 @@
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* Utility classes */
+.container {
+    max-width: 1100px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 2rem;
+}
+
+.btn {
+    display: inline-block;
+    background: #333;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    margin: 1rem 0;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #555;
+}
+
+/* Header */
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* Navigation Menu */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.75rem;
+}
+
+nav ul li a:hover {
+    background: #555;
+}
+
+/* Main content area */
+main {
+    padding: 2rem 0;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+/* About Section */
+#about {
+    background: #fff;
+    padding: 1.5rem;
+}
+
+/* Portfolio Section */
+#portfolio {
+    background: #333;
+    color: #fff;
+    padding: 1.5rem;
+}
+
+/* Contact Section */
+#contact {
+    background: #fff;
+    padding: 1.5rem;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+@media (max-width: 700px) {
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul li {
+        margin-bottom: 1rem;
+    }
+}
+.view {
+    width: 100%; /* Default width for mobile */
+    min-height: 200px; /* Default height for mobile */
+}
+
+/* Tablet styles (between 601px and 1024px) */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    .view {
+        width: 70%; /* Adjust width for tablets */
+        min-height: 300px; /* Adjust height for tablets */
+    }
+}
+
+/* Desktop styles (1025px and above) */
+@media screen and (min-width: 1025px) {
+    .view {
+        width: 50%; /* Adjust width for desktop */
+        min-height: 400px; /* Adjust height for desktop */
+    }
+}
